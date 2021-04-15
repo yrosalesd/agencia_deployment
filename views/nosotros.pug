@@ -1,0 +1,34 @@
+extends ./layout/index
+
+//-agregar este contenido en el block contenido (identacion)
+block contenido
+    main.container.mt-5 
+        .row 
+            .col-md-5 
+                img(src="img/nosotros.jpg", alt="imagen sobre nosotros", class="img-fluid")
+            .col-md-7
+                h1=pagina
+                
+                blockquote Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis risus, volutpat nec sagittis vitae, ornare malesuada nibh. Sed ut enim vitae dui fringilla rutrum. Mauris non dui purus. Fusce gravida gravida nibh, sed vestibulum arcu fringilla non. Integer non eleifend est, ut congue lectus. Vestibulum vel scelerisque risus. Morbi a lacinia nibh, id ullamcorper quam. Donec placerat ultricies erat. Nulla fringilla mi eu dolor varius tristique. Fusce interdum fringilla justo. Fusce sed dapibus eros. 
+        
+                p Sed et rhoncus arcu. Donec posuere neque a efficitur consectetur. Suspendisse at volutpat massa. Etiam non erat sagittis leo euismod egestas. Pellentesque laoreet at nisi quis faucibus. Mauris nec lacinia justo, a tincidunt neque. Nulla vel rutrum nulla. Phasellus mollis ornare malesuada.
+
+                p Fusce eget sapien id leo vehicula tempor. Nullam fermentum elementum varius. Phasellus aliquam ipsum in nulla scelerisque pellentesque. Integer eu ante lacus. Morbi suscipit mollis fermentum. Integer aliquam sem ac velit malesuada fringilla. Proin in pretium lacus. Aliquam nec enim eleifend, pulvinar elit quis, consectetur dolor. Curabitur erat est, interdum nec maximus ut, egestas sed nunc. Etiam gravida erat ut volutpat pretium. Curabitur sed ullamcorper nulla. Morbi eget tellus turpis. Ut at gravida metus.
+    
+    .listado-iconos 
+        .container.mt-5.py-5.text-center 
+            .row 
+                .col-md-4
+                    img(src="img/icono_seguridad.svg", alt="icono seguridad", class="img-fluid mb-4")
+                    h2.mb-4 Seguridad 
+                    p Etiam gravida erat ut volutpat pretium. Curabitur sed ullamcorper nulla. Morbi eget tellus turpis. Ut at gravida metus.
+
+                .col-md-4
+                    img(src="img/icono_destinos.svg", alt="icono destinos", class="img-fluid mb-4")
+                    h2.mb-4 Mejores Destinos 
+                    p Etiam gravida erat ut volutpat pretium. Curabitur sed ullamcorper nulla. Morbi eget tellus turpis. Ut at gravida metus.
+
+                .col-md-4
+                    img(src="img/icono_precios.svg", alt="icono precios", class="img-fluid mb-4")
+                    h2.mb-4 Los Mejores Precios 
+                    p Etiam gravida erat ut volutpat pretium. Curabitur sed ullamcorper nulla. Morbi eget tellus turpis. Ut at gravida metus.

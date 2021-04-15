@@ -1,0 +1,34 @@
+//- utilizar block contenido en este inicio
+//- decirle que archivo quieres utilizar , no necesitas la extencion porque es un archivo de pug 
+extends ./layout/index
+//-
+block slider 
+    .slider 
+        h1 Rio de Janeiro 
+        em aventura 
+        
+//-agregar este contenido en el block contenido (identacion)
+block contenido
+    main.container.mt-5 
+        
+        h2.text-center.mb-5 Sobre Nosotros 
+        .row.mb-5 
+            .col-md-6 
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sagittis tincidunt pellentesque. Nullam efficitur interdum diam, ac luctus arcu molestie eu. Vivamus sed porta quam, in mattis ligula. Ut id eros non erat ultrices consequat quis eget ex. Nunc mollis et lectus sit amet maximus. Sed vel mattis velit. 
+                p Donec placerat purus erat. Phasellus orci eros, pellentesque quis consectetur et, gravida et orci. Vestibulum maximus tortor vel massa feugiat mattis. Proin imperdiet, augue sit amet tristique interdum, tortor urna condimentum metus, et auctor metus mi quis diam. 
+            .col-md-6 
+                img(src="/img/inicio_nosotros.jpg", alt="imagen nosotros", class="img-fluid")
+        //- parcial 
+        include ./layout/bloque_viajes
+    .descuento 
+        .container 
+            .row    
+                .col-md-6 
+                    .contenido 
+                        h3 5% de Descuento 
+                        p.titulo Viaje a Canada 
+                        p.fecha 20 de Marzo de 2022-28 de Marzo de 2022
+                        p.precio $2,500 USD
+    .container 
+        h2.mt-5.text-center Testimoniales
+        include ./layout/bloque_testimoniales     
